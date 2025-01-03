@@ -1,0 +1,1 @@
+docker run -it --gpus all --network=host -v /dev/shm:/dev/shm --shm-size=850g -v $(pwd):/graphstorm -v $(pwd)/dataset:/data -w /graphstorm graphstorm:local-gpu /bin/bash

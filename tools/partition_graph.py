@@ -126,7 +126,7 @@ if __name__ == '__main__':
         dataset = OGBTextFeatDataset(args.filepath, dataset=args.dataset,
                                      retain_original_features=args.retain_original_features,
                                      max_sequence_length=args.max_seq_length,
-                                     lm_model_name=args.lm_model_name)
+                                     lm_model_name=args.lm_model_name, is_homo=True)
     elif args.dataset == 'movie-lens-100k':
         dataset = MovieLens100kNCDataset(args.filepath)
     elif args.dataset == 'movie-lens-100k-text':
